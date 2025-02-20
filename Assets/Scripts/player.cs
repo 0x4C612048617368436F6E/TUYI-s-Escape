@@ -6,7 +6,7 @@ public class player : MonoBehaviour
 {
     private CharacterController playerCharacterController;
     private Vector3 playerVelocity;
-    private float playerSpeed = 1.5f;
+    private float playerSpeed = 3.0f;
     private float gravity = -9.8f;
     private Vector3 inputs;
     private Animator playerAnimatorController;
@@ -68,7 +68,7 @@ public class player : MonoBehaviour
         else
         {
             playerCharacterController.Move(inputs * playerSpeed * Time.deltaTime);
-            Debug.Log(inputs);
+            //Debug.Log(inputs);
         }
 
 
@@ -94,7 +94,7 @@ public class player : MonoBehaviour
         {
             isInAir = true;
         }
-        Debug.Log(playerVelocity);
+        //Debug.Log(playerVelocity);
     }
 
 }
